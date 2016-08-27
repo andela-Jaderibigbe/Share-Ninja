@@ -1,0 +1,23 @@
+<div class="modal fade" id="postModal" ng-controller="TaskController" >
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="panel panel-warning title">
+        <div class="panel-heading title">
+          <button class="close" type="button" data-dismiss="modal" arai-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <h3 class="panel-title">Post a task (FREE)</h3>
+        </div>
+        <div class="panel-body">
+          <form ng-submit="createTask()">
+            <input type="text" required class="form-control" placeholder="Title of Post" ng-model="task.title">
+            <br>
+            <textarea ng-model="task.description" placeholder="Describe what you want done" class="form-control" required></textarea>
+            <input type="number" class="form-control" placeholder="How much are you willing to pay?" ng-model="task.total" required>
+            <input type="submit" class="btn btn-warning" value="Post Now">
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

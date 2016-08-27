@@ -1,0 +1,27 @@
+<div class="auth-forms title">
+  <h2>Register</h2>
+  <form ng-submit="register(user)">
+    <div class="input-group">
+      <div class="input-group-addon">
+        <i class="glyphicon glyphicon-envelope" aria-hidden="true"></i>
+      </div>
+      <input ng-model="user.name" type="text" placeholder="Name" class="form-control" required>
+    </div><br>
+
+    <div class="input-group">
+      <div class="input-group-addon">
+        <i class="glyphicon glyphicon-lock" aria-hidden="true"></i>
+      </div>
+      <input ng-model="user.email" type="email" placeholder="Email" class="form-control" required>
+    </div><br>
+
+    <div class="input-group">
+      <div class="input-group-addon">
+        <i class="glyphicon glyphicon-lock" aria-hidden="true"></i>
+      </div>
+      <input ng-model="user.password" type="password" placeholder="Password" class="form-control" required>
+    </div><br>    
+    
+    <input type="submit" class="btn btn-danger" value="REGISTER">
+  </form>
+</div>

@@ -1,0 +1,22 @@
+<div class="modal fade" id="editModal" ng-controller="TaskController">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="panel panel-info title">
+        <div class="panel-heading title">
+          <button class="close" type="button" data-dismiss="modal" arai-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <h3 class="panel-title">Edit a task</h3>
+        </div>
+        <div class="panel-body">
+          <form ng-submit="editTask(selectedTask)">
+            <input type="text" ng-model="selectedTask.title" class="form-control" placeholder="Title">
+            <textarea class="form-control" row="3" ng-model="selectedTask.description" placeholder"Describe the task you want to share"></textarea>
+            <input type="number" ng-model="selectedTask.total" class="form-control" required placeholder="How much are you willing to pay">
+            <input type="submit" value="Update Task" class="btn btn-info">
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
